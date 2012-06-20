@@ -1,0 +1,144 @@
+Script started on Wed 20 Jun 2012 11:38:33 AM EDT
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [msudo gedit
+[sudo] password for jim: 
+
+(gedit:31642): Gtk-WARNING **: Attempting to store changes into `/root/.local/share/recently-used.xbel', but failed: Failed to create file '/root/.local/share/recently-used.xbel.75DBGW': No such file or directory
+
+(gedit:31642): Gtk-WARNING **: Attempting to set the permissions of `/root/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(gedit:31642): Gtk-WARNING **: Attempting to store changes into `/root/.local/share/recently-used.xbel', but failed: Failed to create file '/root/.local/share/recently-used.xbel.E7RPGW': No such file or directory
+
+(gedit:31642): Gtk-WARNING **: Attempting to set the permissions of `/root/.local/share/recently-used.xbel', but failed: No such file or directory
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [msc[K[Krails server
+=> Booting WEBrick
+=> Rails 3.2.6 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-06-20 11:43:11] INFO  WEBrick 1.3.1
+[2012-06-20 11:43:11] INFO  ruby 1.9.3 (2012-04-20) [x86_64-linux]
+[2012-06-20 11:43:11] INFO  WEBrick::HTTPServer#start: pid=31671 port=3000
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-06-20 11:44:06 -0400
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-06-20 11:44:14 -0400
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (0.9ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2012-06-20 11:44:46 -0400
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (0.4ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+[2012-06-20 11:44:46] WARN  Could not determine content-length of response body. Set content-length of the response or set Response#chunked = true
+^C[2012-06-20 11:48:34] INFO  going to shutdown ...
+[2012-06-20 11:48:34] INFO  WEBrick::HTTPServer#start done.
+Exiting
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [mapt-get install libcurl4-gnutls-dev lib expat1-dev gettext \
+>   libz-dev libssl-dev
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [msudo apt-get install libcurl4-gnutls-de v libexpat1-dev gettext \
+>   libz-dev libssl-dev
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Note, selecting 'zlib1g-dev' instead of 'libz-dev'
+gettext is already the newest version.
+libexpat1-dev is already the newest version.
+libexpat1-dev set to manually installed.
+zlib1g-dev is already the newest version.
+zlib1g-dev set to manually installed.
+The following packages were automatically installed and are no longer required:
+  fp-units-multimedia fp-units-gnome1 fp-units-db fp-units-fv fp-units-math
+  fp-ide lcl-gtk2 fp-units-gtk fp-units-net
+Use 'apt-get autoremove' to remove them.
+Suggested packages:
+  libcurl3-dbg
+The following NEW packages will be installed:
+  libcurl4-gnutls-dev libidn11-dev libldap2-dev
+The following packages will be upgraded:
+  libssl-dev libssl0.9.8
+2 upgraded, 3 newly installed, 0 to remove and 65 not upgraded.
+Need to get 5,739 kB of archives.
+After this operation, 7,885 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu/ natty-updates/main libssl-dev amd64 0.9.8o-5ubuntu1.7 [2,177 kB]
+            0% [1 libssl-dev 1,137 B/2,177 kB 0%]3% [1 libssl-dev 226 kB/2,177 kB 10%]                                     11% [1 libssl-dev 669 kB/2,177 kB 30%]                                      20% [1 libssl-dev 1,171 kB/2,177 kB 53%]29% [1 libssl-dev 1,718 kB/2,177 kB 78%]                                        37% [Working]             Get:2 http://archive.ubuntu.com/ubuntu/ natty-updates/main libssl0.9.8 amd64 0.9.8o-5ubuntu1.7 [836 kB]
+             37% [2 libssl0.9.8 1,593 B/836 kB 0%]48% [2 libssl0.9.8 583 kB/836 kB 69%]                                     52% [Working]             Get:3 http://archive.ubuntu.com/ubuntu/ natty/main libidn11-dev amd64 1.18-1build1 [687 kB]
+             52% [3 libidn11-dev 2,784 B/687 kB 0%]61% [3 libidn11-dev 525 kB/687 kB 76%]                                      64% [Working]             Get:4 http://archive.ubuntu.com/ubuntu/ natty-updates/main libldap2-dev amd64 2.4.23-6ubuntu6.1 [990 kB]
+             64% [4 libldap2-dev 208 B/990 kB 0%]                                    74% [4 libldap2-dev 563 kB/990 kB 56%]                                      81% [Working]             Get:5 http://archive.ubuntu.com/ubuntu/ natty-updates/main libcurl4-gnutls-dev amd64 7.21.3-1ubuntu1.5 [1,049 kB]
+             81% [5 libcurl4-gnutls-dev 1,356 B/1,049 kB 0%]92% [5 libcurl4-gnutls-dev 607 kB/1,049 kB 57%]                                               100% [Working]              Fetched 5,739 kB in 5s (975 kB/s)
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 206644 files and directories currently installed.)
+Preparing to replace libssl-dev 0.9.8o-5ubuntu1.5 (using .../libssl-dev_0.9.8o-5ubuntu1.7_amd64.deb) ...
+Unpacking replacement libssl-dev ...
+Preparing to replace libssl0.9.8 0.9.8o-5ubuntu1.5 (using .../libssl0.9.8_0.9.8o-5ubuntu1.7_amd64.deb) ...
+Unpacking replacement libssl0.9.8 ...
+Processing triggers for man-db ...
+Setting up libssl0.9.8 (0.9.8o-5ubuntu1.7) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Selecting previously deselected package libidn11-dev.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 206644 files and directories currently installed.)
+Unpacking libidn11-dev (from .../libidn11-dev_1.18-1build1_amd64.deb) ...
+Selecting previously deselected package libldap2-dev.
+Unpacking libldap2-dev (from .../libldap2-dev_2.4.23-6ubuntu6.1_amd64.deb) ...
+Selecting previously deselected package libcurl4-gnutls-dev.
+Unpacking libcurl4-gnutls-dev (from .../libcurl4-gnutls-dev_7.21.3-1ubuntu1.5_amd64.deb) ...
+Processing triggers for doc-base ...
+Processing 2 added doc-base file(s)...
+Registering documents with scrollkeeper...
+Processing triggers for install-info ...
+Processing triggers for man-db ...
+Setting up libssl-dev (0.9.8o-5ubuntu1.7) ...
+Setting up libidn11-dev (1.18-1build1) ...
+Setting up libldap2-dev (2.4.23-6ubuntu6.1) ...
+Setting up libcurl4-gnutls-dev (7.21.3-1ubuntu1.5) ...
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [mapt-get install git-core
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [mapt-get install git-core[1@s[1@u[1@d[1@o[1@ 
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  fp-units-multimedia fp-units-gnome1 fp-units-db fp-units-fv fp-units-math
+  fp-ide lcl-gtk2 fp-units-gtk fp-units-net
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  git-core
+0 upgraded, 1 newly installed, 0 to remove and 65 not upgraded.
+Need to get 1,380 B of archives.
+After this operation, 28.7 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu/ natty/main git-core all 1:1.7.4.1-3 [1,380 B]
+            99% [1 git-core 1,380 B/1,380 B 100%]                                     100% [Working]              Fetched 1,380 B in 0s (3,833 B/s)
+Selecting previously deselected package git-core.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 207176 files and directories currently installed.)
+Unpacking git-core (from .../git-core_1%3a1.7.4.1-3_all.deb) ...
+Setting up git-core (1:1.7.4.1-3) ...
+[0;31m[jim@JLMA-XPS-8300 first_app]$ [msudo apt-get install git-cola
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  fp-units-multimedia fp-units-gnome1 fp-units-db fp-units-fv fp-units-math
+  fp-ide lcl-gtk2 fp-units-gtk fp-units-net
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  libqt3-mt xxdiff
+Suggested packages:
+  libqt3-mt-psql libqt3-mt-mysql libqt3-mt-odbc xxdiff-scripts
+The following NEW packages will be installed:
+  git-cola libqt3-mt xxdiff
+0 upgraded, 3 newly installed, 0 to remove and 65 not upgraded.
+Need to get 4,254 kB of archives.
+After this operation, 13.3 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu/ natty/universe git-cola all 1.4.3-1 [534 kB]
+            0% [1 git-cola 1,139 B/534 kB 0%]5% [1 git-cola 231 kB/534 kB 43%]                                 12% [Working]             Get:2 http://archive.ubuntu.com/ubuntu/ natty/main libqt3-mt amd64 3:3.3.8-b-7ubuntu3 [3,304 kB]
+             12% [2 libqt3-mt 11.4 kB/3,304 kB 0%]28% [2 libqt3-mt 662 kB/3,304 kB 20%]                                     39% [2 libqt3-mt 1,139 kB/3,304 kB 34%]51% [2 libqt3-mt 1,661 kB/3,304 kB 50%]64% [2 libqt3-mt 2,202 kB/3,304 kB 66%]77% [2 libqt3-mt 2,752 kB/3,304 kB 83%]                                       90% [Working]             Get:3 http://archive.ubuntu.com/ubuntu/ natty/universe xxdiff amd64 1:3.2-10 [416 kB]
+             90% [3 xxdiff 157 B/416 kB 0
